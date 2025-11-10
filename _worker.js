@@ -252,7 +252,7 @@ function parsePryAddress(serverStr) {
 }
 
 function isSpeedTestSite(hostname) {
-    const speedTestDomains = ['speedtest.net','fast.com','speedtest.cn','speed.cloudflare.com', 'ovo.speedtestcustom.com'];
+    const speedTestDomains = [''];
     if (speedTestDomains.includes(hostname)) {
         return true;
     }
@@ -939,3 +939,4 @@ function getHomePage(request) {
     // 暂时返回一个占位符响应，因为您只需要修改 CFIP 列表获取部分
     return new Response('Worker running. Access /<subpath> for subscription.', { status: 200, headers: { 'Content-Type': 'text/plain' } });
 }
+
